@@ -1,6 +1,7 @@
 export class CreateBookDto {
-    id: String;
-    name: String;
-    description?: String;
-    punctuation: Number;
+    id: string;
+    name: string;
+    autor: string;
+    description?: string;
+    punctuation: number;
 }
