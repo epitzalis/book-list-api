@@ -49,7 +49,7 @@ export class BookController {
     @Delete(':id')
     delete (@Res() response, @Param('id') idBook) {
         return this._bookService.deleteBook(idBook).then( () => {
-            response.status(HttpStatus.OK).json({message: 'Book updated successfully'});
+            response.status(HttpStatus.OK).json({message: 'Book deleted successfully'});
         }).catch( () => {
             response.status(HttpStatus.FORBIDDEN).json({message: 'Error deleting book'});
         });

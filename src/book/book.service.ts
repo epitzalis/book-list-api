@@ -23,6 +23,9 @@ export class BookService {
         book.name = newBook.name;
         book.description = newBook.description;
         book.autor = newBook.autor;
+        book.isbn = newBook.isbn;
+        book.price = newBook.price;
+        book.photoUrl = newBook.photoUrl;
         book.punctuation = newBook.punctuation;
         return await this._bookRepository.save(book);
     }
@@ -32,6 +35,9 @@ export class BookService {
         book.name = updateBook.name;
         book.description = updateBook.description;
         book.autor = updateBook.autor;
+        book.isbn = updateBook.isbn;
+        book.price = updateBook.price;
+        book.photoUrl = updateBook.photoUrl;
         book.punctuation = updateBook.punctuation;
         return await this._bookRepository.save(book);
     }

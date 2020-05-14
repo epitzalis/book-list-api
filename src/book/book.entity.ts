@@ -12,10 +12,19 @@ export class Book {
   @Column({ length: 150 })
   autor: string;
 
-  @Column('text')
+  @Column({ length: 20 })
+  isbn: string;
+
+  @Column({ nullable: true })
+  photoUrl: string;
+
+  @Column('text', { nullable: true })
   description: string;
 
-  @Column('int')
+  @Column('int', { nullable: true })
   punctuation: number;
+
+  @Column('float')
+  price: number;
 
 }
