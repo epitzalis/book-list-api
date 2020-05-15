@@ -1,10 +1,9 @@
 export class BookDto {
     id?: string;
     name: string;
-    autor: string;
+    author: string;
     isbn: string;
     description?: string;
-    punctuation?: number;
     photoUrl?: string;
     price?: number;
 }

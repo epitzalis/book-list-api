@@ -10,7 +10,7 @@ export class Book {
   name: string;
 
   @Column({ length: 150 })
-  autor: string;
+  author: string;
 
   @Column({ length: 20 })
   isbn: string;
@@ -20,9 +20,6 @@ export class Book {
 
   @Column('text', { nullable: true })
   description: string;
-
-  @Column('int', { nullable: true })
-  punctuation: number;
 
   @Column('float')
   price: number;
