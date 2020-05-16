@@ -11,7 +11,7 @@ export class BookService {
     ) { }
 
     async getAll(): Promise<Book[]>  {
-        return await this._bookRepository.find();
+        return await this._bookRepository.find({order: {name: 'ASC'}});
     }
 
     async get(idBook: number): Promise<Book>  {
